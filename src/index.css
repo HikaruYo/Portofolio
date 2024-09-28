@@ -323,11 +323,16 @@ span {
 
 .footer {
     display: flex;
-    justify-content: right;
+    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     padding: 2rem 9%;
     background: var(--bg-color);
+    flex-direction: column;
+}
+
+.footer .text {
+  margin-top: 10px;
 }
 
 .footer-iconTop a {
@@ -469,6 +474,6 @@ span {
     }
 
     .footer {
-        flex-direction: column-reverse;
+        flex-direction: column;
     }
 }

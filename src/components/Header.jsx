@@ -1,19 +1,16 @@
-// import React from 'react'
+import React from 'react'
 
 function Header() {
     return (
-        <header>
-            <h1>Hikaru's Domain</h1>
-            <nav>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Skills</a></li>
-                    <li><a href="#">Project</a></li>
-                </ul>
+        <header class="header">
+            <a href="#" class="logo">Hikaru's Domain</a>
+            <nav class="navbar">
+                <a href="#home" class="active">Home</a>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#project">Project</a>
             </nav>
-            <hr />
-        </header>
+    </header>
     )
 }
 

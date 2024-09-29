@@ -79,6 +79,7 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
+    background: var(--second-bg-color);
 }
 
 .home-img img {
@@ -162,6 +163,10 @@ span {
     margin: 2rem 0 3rem;
 }
 
+.skills {
+    background: var(--second-bg-color);
+}
+
 .skills h2 {
     margin-bottom: 5rem;
 }
@@ -176,7 +181,7 @@ span {
 
 .skills-container .skills-box {
     flex: 1 1 30rem;
-    background: var(--second-bg-color);
+    background: var(--bg-color);
     padding: 3rem 2rem 4rem;
     border-radius: 2rem;
     text-align: center;
@@ -196,7 +201,7 @@ span {
 
 .skills-box h3 {
     font-size: 2.6rem;
-}container
+}
 
 .skills-box p {
     font-size: 1.6rem;
@@ -275,52 +280,6 @@ span {
     color: var(--second-bg-color);
 }
 
-.contact h2 {
-    margin-bottom: 3rem;
-}
-
-.contact form {
-    max-width: 70rem;
-    margin: 1rem auto;
-    text-align: center;
-    margin-bottom: 3rem;
-}
-
-.contact form .input-box {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-.contact form .input-box input,
-.contact form textarea {
-    width: 100%;
-    padding: 1.5rem;
-    font-size: 1.6rem;
-    color: var(--text-color);
-    background: var(--second-bg-color);
-    border-radius: .8rem;
-    margin: .7rem 0;
-}
-
-.contact form .input-box input {
-    width: 49%;
-}
-
-.contact form textarea {
-    resize: none;
-}
-
-/* .contact p {
-    font-size: 1.6rem;
-    color: var(--text-color);
-} */
-
-.contact form .btn {
-    margin-top: 2rem;
-    cursor: pointer;
-}
-
 .footer {
     display: flex;
     justify-content: center;
@@ -332,7 +291,7 @@ span {
 }
 
 .footer .text {
-  margin-top: 10px;
+    margin-top: 10px;
 }
 
 .footer-iconTop a {
@@ -457,10 +416,6 @@ span {
 @media (max-width: 450px) {
     html {
         font-size: 50%;
-    }
-
-    .contact form .input-box input {
-        width: 100%;
     }
 }
 

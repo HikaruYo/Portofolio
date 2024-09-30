@@ -21,7 +21,7 @@ function Home() {
 
         // Typed.js
         const typed = new Typed(typedRef.current, {
-            strings: ['Web Developer', 'Data Scientist'],
+            strings: ['Web Developer', 'BackEnd Developer'],
             typeSpeed: 100,
             backSpeed: 100,
             backDelay: 1000,

@@ -176,7 +176,24 @@ span {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    flex-direction: column;
     gap: 2rem;
+}
+
+.skills-container .skills-header {
+    display: flex;
+    gap: 4rem;
+}
+
+.skills-container .skills-header a {
+    font-size: 2rem;
+    text-decoration: underline;
+    color: var(--text-color);
+    transition: .3s;
+}
+
+.skills-container .skills-header a:hover {
+    color: var(--main-color);
 }
 
 .skills-container .skills-box {
@@ -285,7 +302,7 @@ span {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    padding: 2rem 9%;
+    padding: 1.4rem 9%;
     background: var(--bg-color);
     flex-direction: column;
 }

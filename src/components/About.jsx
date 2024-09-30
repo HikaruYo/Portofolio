@@ -25,7 +25,7 @@ function About() {
 
             <div className="about-content">
                 <h2 className="heading">About <span>Me</span></h2>
-                <h3>BackEnd Developer!</h3>
+                <h3><span>BackEnd</span> Developer!</h3>
                 <p>My name is Adithya Prasetio Hutahaean, I was born in Semarang on January 29 2008. I am a BackEnd Developer. Currently I am studying at SMK Negeri 8 Semarang class 10 PPLG 1. I love gazing at the beautiful stars on a quiet night. My hobbies are watching anime, reading comics, and playing games. I also like workout and want to have an athletic body.</p>
             </div>
         </section>

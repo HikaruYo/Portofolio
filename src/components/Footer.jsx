@@ -7,7 +7,7 @@ function Footer() {
                 <a href="#home"><i class='bx bx-chevron-up'></i></a>
             </div> */}
             <div className='text'>
-                <p>{new Date().getFullYear()} Hikaru's Domain. Created using React</p>
+                <p>{new Date().getFullYear()} Hikaru's Domain.</p>
             </div>
         </footer>
     )

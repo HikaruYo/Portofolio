@@ -182,7 +182,7 @@ span {
 
 .skills-container .skills-header {
     display: flex;
-    gap: 4rem;
+    gap: 1.2rem;
 }
 
 .skills-container .skills-header a {
@@ -192,14 +192,22 @@ span {
     transition: .3s;
 }
 
-.skills-container .skills-header a:hover {
+.skills-container .skills-header a:hover,
+.skills-container .skills-header a.active  {
     color: var(--main-color);
 }
 
+.skills-container .skills-box-section {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 2rem;
+    padding-top: 2.4rem;
+}
+
 .skills-container .skills-box {
-    flex: 1 1 30rem;
+    width: 160px;
     background: var(--bg-color);
-    padding: 3rem 2rem 4rem;
+    padding: 2rem 1rem 2rem 1.2rem;
     border-radius: 2rem;
     text-align: center;
     border: .2rem solid var(--bg-color);
@@ -212,17 +220,13 @@ span {
 }
 
 .skills-box i {
-    font-size: 7rem;
+    font-size: 70px;
     color: var(--main-color);
 }
 
 .skills-box h3 {
-    font-size: 2.6rem;
-}
-
-.skills-box p {
-    font-size: 1.6rem;
-    margin: 1rem 0 3rem;
+    font-size: 2.2rem;
+    padding-top: 1rem;
 }
 
 .project {
@@ -363,6 +367,12 @@ span {
     }
 }
 
+@media (max-width: 860px) {
+    .skills .skills-box-section {
+        grid-template-columns: repeat(3, 2fr);
+    }
+}
+
 @media (max-width: 768px) {
     #menu-icon {
         display: block;
@@ -421,6 +431,10 @@ span {
         margin-bottom: 3rem;
     }
 
+    .skills .skills-box-section {
+        grid-template-columns: repeat(3, 2fr);
+    }
+
     .project h2 {
         margin-bottom: 3rem;
     }
@@ -433,6 +447,10 @@ span {
 @media (max-width: 450px) {
     html {
         font-size: 50%;
+    }
+
+    .skills .skills-box-section {
+        grid-template-columns: repeat(2, 3fr);
     }
 }
 
@@ -447,5 +465,9 @@ span {
 
     .footer {
         flex-direction: column;
+    }
+
+    .skills .skills-box-section {
+        grid-template-columns: repeat(1, 5fr);
     }
 }

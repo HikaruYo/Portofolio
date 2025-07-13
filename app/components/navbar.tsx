@@ -22,7 +22,7 @@ export default function Navbar() {
   }, []);
 
   const links = (
-    <div className="flex flex-col md:flex-row gap-4 md:gap-8 text-lg md:items-center">
+    <div className="flex flex-col md:flex-row justify-between gap-4 text-lg md:items-center">
       <Link
         href="/"
         className={`nav-link ${pathname === "/" ? "active" : ""}`}
@@ -50,6 +50,13 @@ export default function Navbar() {
         onClick={() => setMenuOpen(false)}
       >
         Project
+      </Link>
+      <Link
+        href="/contact"
+        className={`nav-link ${pathname === "/contact" ? "active" : ""}`}
+        onClick={() => setMenuOpen(false)}
+      >
+        Contact
       </Link>
     </div>
   );

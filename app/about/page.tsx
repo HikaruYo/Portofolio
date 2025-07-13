@@ -5,6 +5,12 @@ import Me from "@/public/me.jpg"
 import Image from "next/image";
 
 export default function AboutPage() {
+  const text = [
+    "I'm Adithya Prasetio Hutahaean, an aspiring developer with a strong interest in technology and programming. " +
+    "I have some experience working with Next.js, Laravel, and Firebase. " +
+    "Currently, I'm highly interested in mobile app development and continuously learning to expand my skills across different platforms."
+  ]
+
   return (
     <main className="min-h-screen flex text-black dark:text-white transition duration-500">
 
@@ -28,10 +34,7 @@ export default function AboutPage() {
             transition={{duration: 1}}
           >
             <p>
-              My name is Adithya Prasetio Hutahaean, I was born in Semarang on January 29 2008.
-              I am a BackEnd Developer. Currently I am studying at SMK Negeri 8 Semarang class 11 PPLG 1.
-              I love gazing at the beautiful stars on a quiet night.
-              My hobbies are watching anime, reading comics, and playing games.
+              { text }
             </p>
           </motion.div>
         </div>

@@ -34,7 +34,7 @@ export default function RootLayout({
       <main className="px-8 md:px-24 lg:px-72">
         {/* Navbar */}
         <nav
-          className="fixed w-full md:w-auto left-0 top-0 md:top-5 md:left-1/2 md:-translate-x-1/2 text-white bg-[#495057] shadow-md px-7 py-3 md:rounded-full flex gap-4 md:gap-24 items-center font-medium backdrop-blur-sm z-50"
+          className="fixed w-full md:w-auto left-0 top-0 md:top-5 md:left-1/2 md:-translate-x-1/2 text-white bg-[#495057] shadow-md px-7 py-3 md:rounded-full flex gap-4 md:gap-[92px] items-center font-medium backdrop-blur-sm z-50"
         >
           <h1 className="flex-2 text-xl font-bold h-7 w-auto md:w-44 items-center justify-center cursor-default">
             Hikaru&apos;s Domain
@@ -50,7 +50,7 @@ export default function RootLayout({
         {/* Main Content */}
         {children}
 
-        <footer className="fixed sm:-left-1 left-0 bottom-2 w-full items-center justify-center text-center text-sm text-neutral-500">
+        <footer className="fixed sm:-left-1 left-0 bottom-0 w-full items-center justify-center text-center text-sm text-neutral-500 bg-[#212529]">
           2025 Copyright Hikaru
         </footer>
       </main>

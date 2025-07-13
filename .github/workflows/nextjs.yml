@@ -79,6 +79,11 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           path: ./dist
+      - name: Check if dist/ exists
+        run: |
+          echo "Checking dist directory..."
+          ls -lah
+          ls -lah dist || (echo "dist/ not found!" && exit 1)
 
   # Deployment job
   deploy:

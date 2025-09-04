@@ -6,7 +6,9 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "serve": "serve out",
+    "deploy": "npm run build && npx serve out"
   },
   "dependencies": {
     "framer-motion": "^12.12.1",

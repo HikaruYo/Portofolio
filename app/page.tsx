@@ -3,7 +3,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import Violet from "@/public/Violet.jpg"
+import Me from "@/public/me.jpg"
 import { FaGithub, FaInstagram } from "react-icons/fa";
 import Link from "next/link";
 import {ReactTyped} from "react-typed";
@@ -14,9 +14,9 @@ export default function Home() {
 
       {/* Main Content */}
       <div
-        className="absolute top-36 -left-10 w-72 h-72 bg-gray-500 dark:bg-[#252525] rounded-full mix-blend-multiply filter blur-xl dark:blur-2xl opacity-70 dark:opacity-90 animate-blob"></div>
+        className="absolute top-36 -left-10 w-60 h-60 md:w-72 md:h-72 bg-gray-500 dark:bg-[#252525] rounded-full mix-blend-multiply filter blur-xl dark:blur-2xl opacity-70 dark:opacity-90 animate-blob"></div>
       <div
-        className="absolute top-60 left-8 w-72 h-72 bg-gray-600 dark:bg[#00111c] rounded-full mix-blend-multiply filter blur-xl opacity-60 dark:opacity-90 animate-blob animation-delay-3"></div>
+        className="absolute top-60 left-8 w-60 h-60 md:w-72 md:h-72 bg-gray-600 dark:bg[#00111c] rounded-full mix-blend-multiply filter blur-xl opacity-60 dark:opacity-90 animate-blob animation-delay-3"></div>
 
       <div
         className="flex flex-col translate-y-14 md:translate-y-0 md:top-0 md:flex-row items-center py-6 gap-10 md:gap-24">
@@ -29,7 +29,7 @@ export default function Home() {
           className="w-[300px] h-[300px] md:w-[350px] rounded-3xl overflow-hidden shadow-lg"
         >
           <Image
-            src={Violet}
+            src={Me}
             alt="profile"
             width={620}
             height={620}

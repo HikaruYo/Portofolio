@@ -1,7 +1,6 @@
 'use client'
 
 import { motion } from "framer-motion";
-import Me from "@/public/me.jpg"
 import {SiFirebase} from "react-icons/si";
 import {FaLaravel} from "react-icons/fa";
 import {RiNextjsFill} from "react-icons/ri";
@@ -12,7 +11,7 @@ export default function AboutPage() {
   const text = [
     "I'm Adithya Prasetio Hutahaean, an aspiring developer with a strong interest in technology and programming. " +
     "I have some experience working with Next.js, Laravel, and Firebase. " +
-    "Currently, I'm highly interested in mobile app development and continuously learning to expand my skills across different platforms."
+    "Currently, I'm deeply passionate about web app development and always eager to broaden my expertise and explore new technologies."
   ]
 
   return (
@@ -30,7 +29,7 @@ export default function AboutPage() {
             animate={{opacity: 1, y: 0}}
             transition={{duration: 1}}
           >
-            <h2 className="text-4xl text-right font-bold">About <span className="text-gray-600 dark:text-gray-400 transition duration-500">Me!</span></h2>
+            <h2 className="text-4xl text-center md:text-right font-bold">About <span className="text-gray-600 dark:text-gray-400 transition duration-500">Me!</span></h2>
           </motion.div>
           <motion.div
             initial={{opacity: 0, y: 50}}
@@ -49,7 +48,7 @@ export default function AboutPage() {
             initial={{opacity: 0, x: 50}}
             animate={{opacity: 1, x: 0}}
             transition={{duration: 1}}
-            className="text-2xl text-gray-300 font-bold pb-4"
+            className="text-2xl text-gray-500 dark:text-gray-300 font-bold pb-4"
           >
             Tech Stack
           </motion.h3>
@@ -58,7 +57,7 @@ export default function AboutPage() {
             <motion.div
               initial={{opacity: 0, y: -50}}
               animate={{opacity: 1, y: 0}}
-              transition={{duration: 1}}
+              transition={{duration: 1, delay: 0.2}}
               className="flex w-20 h-20 items-center justify-center"
             >
               <SiPhp
@@ -68,7 +67,7 @@ export default function AboutPage() {
             <motion.div
               initial={{opacity: 0, y: -50}}
               animate={{opacity: 1, y: 0}}
-              transition={{duration: 1, delay: 0.2}}
+              transition={{duration: 1, delay: 0.4}}
               className="flex w-20 h-20 items-center justify-center"
             >
               <IoLogoJavascript
@@ -78,7 +77,7 @@ export default function AboutPage() {
             <motion.div
               initial={{opacity: 0, y: -50}}
               animate={{opacity: 1, y: 0}}
-              transition={{duration: 1, delay: 0.4}}
+              transition={{duration: 1, delay: 0.6}}
               className="flex w-20 h-20 items-center justify-center"
             >
               <SiFirebase
@@ -88,7 +87,7 @@ export default function AboutPage() {
             <motion.div
               initial={{opacity: 0, y: -50}}
               animate={{opacity: 1, y: 0}}
-              transition={{duration: 1, delay: 0.6}}
+              transition={{duration: 1, delay: 0.8}}
               className="flex w-20 h-20 items-center justify-center"
             >
               <FaLaravel
@@ -98,7 +97,7 @@ export default function AboutPage() {
             <motion.div
               initial={{opacity: 0, y: -50}}
               animate={{opacity: 1, y: 0}}
-              transition={{duration: 1, delay: 0.8}}
+              transition={{duration: 1, delay: 1}}
               className="flex w-20 h-20 items-center justify-center"
             >
               <RiNextjsFill

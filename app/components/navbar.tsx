@@ -22,7 +22,7 @@ export default function Navbar() {
   }, []);
 
   const links = (
-    <div className="flex flex-col md:flex-row justify-between space-x-10 text-lg md:items-center">
+    <div className="flex flex-col md:flex-row justify-between gap-y-4 md:gap-10 text-lg md:items-center">
       <Link
         href="/"
         className={`nav-link ${pathname === "/" ? "active" : ""}`}
@@ -44,13 +44,13 @@ export default function Navbar() {
       >
         Project
       </Link>
-      <Link
-        href="/contact"
-        className={`nav-link ${pathname === "/contact" ? "active" : ""}`}
-        onClick={() => setMenuOpen(false)}
-      >
-        Contact
-      </Link>
+      {/*<Link*/}
+      {/*  href="/contact"*/}
+      {/*  className={`nav-link ${pathname === "/contact" ? "active" : ""}`}*/}
+      {/*  onClick={() => setMenuOpen(false)}*/}
+      {/*>*/}
+      {/*  Contact*/}
+      {/*</Link>*/}
     </div>
   );
 
@@ -58,7 +58,7 @@ export default function Navbar() {
     <>
       {/* Mobile View */}
       {isMobile ? (
-        <div className="flex flex-1 justify-end items-center w-fit">
+        <div className="flex flex-1 justify-end items-center w-full">
           {/* Hamburger Button */}
           <button onClick={() => setMenuOpen(!menuOpen)} className="text-2xl text-white">
             {menuOpen ? <FiX /> : <FiMenu />}

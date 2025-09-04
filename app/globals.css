@@ -4,6 +4,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer utilities {
+    .animation-delay-3 {
+        animation-delay: 3s;
+    }
+}
+
 * {
     scroll-behavior: smooth;
     font-family: 'Poppins', sans-serif;

@@ -50,9 +50,10 @@ export default function RootLayout({
         {/* Main Content */}
         {children}
 
-        <footer className="fixed sm:-left-1 left-0 bottom-0 w-full items-center justify-center text-center text-sm text-neutral-500 bg-[#212529]">
-          2025 Copyright Hikaru
-        </footer>
+        {/*<footer*/}
+        {/*  className="fixed sm:-left-1 left-0 bottom-0 w-full items-center justify-center text-center text-sm text-neutral-500 bg-[#212529]">*/}
+        {/*  2025 Copyright Hikaru*/}
+        {/*</footer>*/}
       </main>
 
     </body>

@@ -22,7 +22,7 @@ export default function Navbar() {
   }, []);
 
   const links = (
-    <div className="flex flex-col md:flex-row justify-between gap-4 text-lg md:items-center">
+    <div className="flex flex-col md:flex-row justify-between space-x-10 text-lg md:items-center">
       <Link
         href="/"
         className={`nav-link ${pathname === "/" ? "active" : ""}`}
@@ -36,13 +36,6 @@ export default function Navbar() {
         onClick={() => setMenuOpen(false)}
       >
         About
-      </Link>
-      <Link
-        href="/skills"
-        className={`nav-link ${pathname === "/skills" ? "active" : ""}`}
-        onClick={() => setMenuOpen(false)}
-      >
-        Skills
       </Link>
       <Link
         href="/project"

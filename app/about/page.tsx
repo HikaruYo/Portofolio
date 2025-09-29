@@ -18,18 +18,18 @@ export default function AboutPage() {
     <main className="min-h-screen flex text-black dark:text-white transition duration-500">
 
       {/* Main Content */}
-      <div className="flex flex-col md:flex-row translate-y-14 md:translate-y-0 items-center py-6 gap-14 md:gap-24">
+      <div className="flex flex-col h-full translate-y-14 md:translate-y-32 items-center py-6 gap-2 md:gap-14">
 
-        {/* Left Content */}
+        {/* Upper Content */}
         <div
-          className="flex flex-col md:flex-1 md:text-left gap-6"
+          className="flex flex-col md:text-left gap-6"
         >
           <motion.div
             initial={{opacity: 0, y: -50}}
             animate={{opacity: 1, y: 0}}
             transition={{duration: 1}}
           >
-            <h2 className="text-4xl text-center md:text-right font-bold">About <span className="text-gray-600 dark:text-gray-400 transition duration-500">Me!</span></h2>
+            <h2 className="text-4xl text-center md:text-center font-bold">About <span className="text-gray-600 dark:text-gray-400 transition duration-500">Me!</span></h2>
           </motion.div>
           <motion.div
             initial={{opacity: 0, y: 50}}
@@ -42,18 +42,18 @@ export default function AboutPage() {
           </motion.div>
         </div>
 
-        {/* Right Content */}
+        {/* Bottom Content */}
         <div className="">
           <motion.h3
             initial={{opacity: 0, x: 50}}
             animate={{opacity: 1, x: 0}}
             transition={{duration: 1}}
-            className="text-2xl text-gray-500 dark:text-gray-300 font-bold pb-4"
+            className="text-2xl text-center text-gray-500 dark:text-gray-300 font-bold pb-4"
           >
             Tech Stack
           </motion.h3>
 
-          <div className="grid grid-cols-3 gap-x-10 gap-y-2">
+          <div className="grid grid-cols-5 gap-x-10">
             <motion.div
               initial={{opacity: 0, y: -50}}
               animate={{opacity: 1, y: 0}}
